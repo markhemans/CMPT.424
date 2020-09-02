@@ -234,6 +234,15 @@ module TSOS {
                     case "help":
                         _StdOut.putText("Help displays a list of (hopefully) valid commands.");
                         break;
+                    case "date":
+                        _StdOut.putText(Date.now());
+                        break;
+                    case "whereami":
+                        _StdOut.putText("Poughkeepsie");
+                        break;
+                    case "whoami":
+                        _StdOut.putText("Robot");
+                        break;
                     // TODO: Make descriptive MANual page entries for the the rest of the shell commands here.
                     default:
                         _StdOut.putText("No manual entry for " + args[0] + ".");

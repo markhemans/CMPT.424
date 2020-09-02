@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Lab1}
+\author{mark.blankson-hemans1 }
+\date{September 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\paragraph{1. What are the advantages and disadvantages of using the same system call interface for manipulating both files and devices?}
+
+\paragraph{The advantages include higher performance metrics by the avoidance of kernel communication to manage devices, the disadvantages are a security risk to access & stability of the CPU. It also complicates issues with interrupt handling and buffers.}
+
+\paragraph{
+2. Would it be possible for the user to develop a new command interpreter using the system call interface provide by the operating system? How?}
+
+\paragraph{Yes. An API can be created to pull commands from an input file to create an output file to be interpreted. APIs leverage system calls directly through libraries provided by the OS. The new command interpreter would map new commands to existing system calls.}
+
+\end{document}
