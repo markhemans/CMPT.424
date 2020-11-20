@@ -29,6 +29,7 @@ module TSOS {
             sc = new ShellCommand(this.shellVer,
                                   "ver",
                                   "- Displays the current version data.");
+
             this.commandList[this.commandList.length] = sc;
 
             // help
@@ -238,11 +239,11 @@ module TSOS {
                         _StdOut.putText(Date.now());
                         break;
                     case "whereami":
-                        _StdOut.putText("Poughkeepsie");
-                        break;
+                     _StdOut.putText("Poughkeepsie");
+                       break;
                     case "whoami":
-                        _StdOut.putText("Robot");
-                        break;
+                     _StdOut.putText("Robot");
+                      break;
                     // TODO: Make descriptive MANual page entries for the the rest of the shell commands here.
                     default:
                         _StdOut.putText("No manual entry for " + args[0] + ".");
